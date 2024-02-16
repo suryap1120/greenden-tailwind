@@ -13,27 +13,49 @@
 <body>
     <!-- Responsive Navbar -->
     <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
-        <h1 class="text-2xl">Greenden</h1>
+        
+        <h1 class="text-2xl"><a href="http://127.0.0.1:5500/index.html#">Greenden</a></h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
 
           
         <ul class="flex gap-5 text-gray-600 hidden md:flex">
             <li>
-                <a class="hover:underline hover:text-black" href="#">Home</a>
+                <a class="hover:underline hover:text-black" href="http://127.0.0.1:5500/index.html#">Home</a>
             </li>
 
             <li>
-                <a class="hover:underline hover:text-black" href="#">Products</a>
+                <a class="hover:underline hover:text-black" href="http://127.0.0.1:5500/product.html#">Products</a>
             </li>
 
             <li>
-                <a class="hover:underline hover:text-black" href="#">Contact</a>
+                <a class="hover:underline hover:text-black" href="http://127.0.0.1:5500/contact.html#">Contact</a>
             </li>
         </ul>
     </nav>
+
+     <!-- Side Navbar -->
+     <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-700" style="width: 50%;height: 100vh; right: -50%;">
+
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 items-center text-gray-600">
+            <li>
+                <a class="hover:underline hover:text-black" href="http://127.0.0.1:5500/index.html#">Home</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="http://127.0.0.1:5500/product.html#">Products</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="http://127.0.0.1:5500/contact.html#">Contact</a>
+            </li>
+        </ul>
+    </section>
 
     <!-- Contact Page -->
     <section class="bg-white dark:bg-gray-900">
@@ -53,7 +75,7 @@
                     <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
                     <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
                 </div>
-                <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+                <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-black rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 bg-green-200">Send message</button>
             </form>
         </div>
       </section>
@@ -68,5 +90,7 @@
     <p>&copy; 2024 Greenden.com</p>
 
 </section>
+    <!-- Script Tag -->
+    <script src="index.js"></script>
 </body>
 </html>
